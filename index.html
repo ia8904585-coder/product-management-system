@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<div class="curd">
+    <div class="head">
+        <h2>CRUDS</h2>
+        <P>PRODUCT MANAGEMENT STSTEM</P>
+    </div>
+    <div class="input1">
+        <input type="text" placeholder="title" id="title">
+        <div class="price">
+            <input type="number"  onkeyup="getlotal()" placeholder="price" id="praice">
+            <input type="number" onkeyup="getlotal()" placeholder="taxes" id="taxes">
+            <input type="number" onkeyup="getlotal()" placeholder="disciunt" id="disciunt">
+            <small id="total"></small>
+        </div>
+        <input type="number" id="count" placeholder="count" class="bu">
+        <input type="text" placeholder="category" id="category" class="bu">
+        <button id="submit">create</button>
+    </div>
+    <div class="outpot">
+        <div class="searchblok">
+            <input type="text"  onkeyup="searchdata(this.value)" id="search" placeholder="search">
+        </div>
+        <div class="btnsearch">
+            <button id="searchtitle" onclick="search(this.id)">search by title</button>
+            <button id="searchcategory" onclick="search(this.id)">search by category</button>
+        </div>
+
+
+
+        <div id="butm">
+
+        </div>
+
+
+        
+        <table>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>disciunt</th>
+                <th>category</th>
+                 <th>total</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+            <tbody id="tbody">
+    
+            </tbody>
+        </table>
+    </div>
+</div>
+<hr>
+<footer><p>CRUDS System &copy;2026 | Deceloped By <span>Ibrahim Ahmed</span></p></footer>
+   
+    <script src="prg.js"></script>
+</body>
+</html>
