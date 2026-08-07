@@ -154,5 +154,18 @@ footer{
     margin-top: 3px;
 
 }
+#total{
+    background-color: rgb(26, 106, 210);
+    border-radius: 5px;
+    padding: 5px 2px;
+    display: block;
+    width: 20%;
+}
+#total::before{
+    content: 'total: ';
+    height: 10px;
+    display:inline-block;
+    
+}
 
 }
